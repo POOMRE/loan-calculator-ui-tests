@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# loan-calculator-ui-tests
-=======
+
 # Loan Calculator UI Tests
 
 This project provides UI testing for a Loan Calculator application. 
@@ -41,4 +39,4 @@ You can then view the Allure report by opening `build/reports/allure-report/inde
 
 ### Test Documentation
 Files with Test Cases and EndPoint api testing can be found in Docs directory
->>>>>>> master
+
