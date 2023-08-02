@@ -28,7 +28,7 @@ This project uses Gradle for running tests. Here are some useful commands:
 
 
 ### Generating Test Reports
-By default, the test report is generated in `build/reports/index.html`. For more detailed reporting, the project supports Allure reports. After running tests, generate an Allure report with one of the following commands:
+By default, the test report is generated in `build/reports/tests/test/index.html`. For more detailed reporting, the project supports Allure reports. After running tests, generate an Allure report with one of the following commands:
 
 - For a temporary live server (server will stop after closing terminal):`./gradlew allureServe`
 
@@ -38,5 +38,5 @@ You can then view the Allure report by opening `build/reports/allure-report/inde
 
 
 ### Test Documentation
-Files with Test Cases and EndPoint api testing can be found in Docs directory
+Files with Test Cases and EndPoint api testing can be found in src/docs directory
 
