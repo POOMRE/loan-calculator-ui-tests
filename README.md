@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# loan-calculator-ui-tests
-=======
+
 # Loan Calculator UI Tests
 
 This project provides UI testing for a Loan Calculator application. 
@@ -24,7 +22,7 @@ This project uses Gradle for running tests. Here are some useful commands:
 
 - Filter tests using the `--tests` option followed by TestPackage, TestClass, or TestMethod.
 
-  - Run tests from a specific TestPackage: `./gradlew clean test --tests "com.bigbank.loan.calc.*"`
+  - Run tests from a specific TestPackage: `./gradlew clean test --tests com.bigbank.loan.calc.*`
   - Run a specific TestClass: `./gradlew clean test --tests LoanCalculatorBoundaryTest `
   - Run a specific TestMethod: `./gradlew clean test --tests LoanCalculatorTest.shouldRetainSavedValuesOnClosureWithSave`
 
@@ -41,4 +39,4 @@ You can then view the Allure report by opening `build/reports/allure-report/inde
 
 ### Test Documentation
 Files with Test Cases and EndPoint api testing can be found in Docs directory
->>>>>>> master
+
