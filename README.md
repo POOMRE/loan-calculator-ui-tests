@@ -1,28 +1,27 @@
-# loan-calculator-ui-tests
+# Loan Calculator UI Tests
 
-This test project focuses on UI testing for Loan calculator
+This project provides UI testing for a Loan Calculator application. 
 
-## Test Classes
+## Getting Started
 
-1. `LoanCalculatorBoundaryTest`:
-   - LoanCalculatorBoundaryTest is a test class to test the loan calculator functionality with boundary values.
+These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
-2. `LoanCalculatorTest`:
-   - LoanCalculatorTest is a test class to test the functionality of the loan calculator page.
+### Prerequisites
 
-## Setting up project and running tests
-Clone project
-To run the tests using Gradle, you can use the following commands:
-- Run all tests: `./gradlew test`
-- You can filter tests by using option --tests
-- Giving values can be TestPackage, TestClass, TestMethod
-- Run tests from a specific test class: `./gradlew clean test --tests LoanCalculatorBoundaryTest`
-- Run a specific test method: `./gradlew test --tests com.banking.BankingTestCreateUser.testCreateUser`
+- Java Development Kit (JDK) - Project SDK version 17 is used in this project.
+- ChromeDriver installed on your machine.
+- All other project dependencies are handled through Gradle and are listed in the project's Gradle file.
 
+### Running Tests
 
-Test report can be seen build/reports/tests/test directory.
+This project uses Gradle for running tests. Here are some useful commands:
 
-## Dependencies
-- The project uses gRPC for communication between client and server.
-- JUnit Jupiter and are used for writing unit tests.
-- Project SDK used 17
+- Run all tests:
+  
+./gradlew test
+- Filter tests using the `--tests` option followed by TestPackage, TestClass, or TestMethod. For example:
+
+  - Run tests from a specific TestPackage: 
+./gradlew clean test --tests LoanCalculatorBoundaryTest
+
+./gradlew clean test --tests LoanCalculatorBoundaryTest
