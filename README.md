@@ -22,7 +22,7 @@ This project uses Gradle for running tests. Here are some useful commands:
 
 - Filter tests using the `--tests` option followed by TestPackage, TestClass, or TestMethod.
 
-  - Run tests from a specific TestPackage: `./gradlew clean test --tests "com.bigbank.loan.calc.*"`
+  - Run tests from a specific TestPackage: `./gradlew clean test --tests com.bigbank.loan.calc.*`
   - Run a specific TestClass: `./gradlew clean test --tests LoanCalculatorBoundaryTest `
   - Run a specific TestMethod: `./gradlew clean test --tests LoanCalculatorTest.shouldRetainSavedValuesOnClosureWithSave`
 
