@@ -30,8 +30,8 @@ public class LoanCalculatorBoundaryTest extends BaseTestCase {
         loanCalculatorPage.closeAndSave();
 
         // Retrieve the loan amount and period from the calculator page
-        double getLoanAmount = transformStringToNumber(loanCalculatorPage.getLoanAmount());
-        double getLoanPeriod = transformStringToNumber(loanCalculatorPage.getLoanPeriod());
+        float getLoanAmount = transformStringToNumber(loanCalculatorPage.getLoanAmount());
+        float getLoanPeriod = transformStringToNumber(loanCalculatorPage.getLoanPeriod());
 
         // Assert that the retrieved values match the expected minimum values
         Assertions.assertEquals(transformStringToNumber(getData("LoanAmountMin")), getLoanAmount);
@@ -48,8 +48,8 @@ public class LoanCalculatorBoundaryTest extends BaseTestCase {
         loanCalculatorPage.closeAndSave();
 
         // Retrieve the loan amount and period from the calculator page
-        double getLoanAmount = transformStringToNumber(loanCalculatorPage.getLoanAmount());
-        double getLoanPeriod = transformStringToNumber(loanCalculatorPage.getLoanPeriod());
+        float getLoanAmount = transformStringToNumber(loanCalculatorPage.getLoanAmount());
+        float getLoanPeriod = transformStringToNumber(loanCalculatorPage.getLoanPeriod());
 
         // Assert that the retrieved values match the expected maximum values
         Assertions.assertEquals(transformStringToNumber(getData("LoanAmountMax")), getLoanAmount);
@@ -65,8 +65,8 @@ public class LoanCalculatorBoundaryTest extends BaseTestCase {
         loanCalculatorPage.setLoanAmountAndPeriod(getData("ExceededLoanAmount"), getData("ExceededLoanPeriod"));
 
         // Retrieve the loan amount and period from the calculator page
-        double getLoanAmount = transformStringToNumber(loanCalculatorPage.getLoanAmount());
-        double getLoanPeriod = transformStringToNumber(loanCalculatorPage.getLoanPeriod());
+        float getLoanAmount = transformStringToNumber(loanCalculatorPage.getLoanAmount());
+        float getLoanPeriod = transformStringToNumber(loanCalculatorPage.getLoanPeriod());
 
         // Assert that the retrieved values are capped at the maximum allowed values
         Assertions.assertEquals(transformStringToNumber(getData("LoanAmountMax")), getLoanAmount);
@@ -82,8 +82,8 @@ public class LoanCalculatorBoundaryTest extends BaseTestCase {
         loanCalculatorPage.setLoanAmountAndPeriod(getData("SmallerLoanAmount"), getData("SmallerLoanPeriod"));
 
         // Retrieve the loan amount and period from the calculator page
-        double getLoanAmount = transformStringToNumber(loanCalculatorPage.getLoanAmount());
-        double getLoanPeriod = transformStringToNumber(loanCalculatorPage.getLoanPeriod());
+        float getLoanAmount = transformStringToNumber(loanCalculatorPage.getLoanAmount());
+        float getLoanPeriod = transformStringToNumber(loanCalculatorPage.getLoanPeriod());
 
         // Assert that the retrieved values are capped at the minimum allowed values
         Assertions.assertEquals(transformStringToNumber(getData("LoanAmountMin")), getLoanAmount);
