@@ -17,11 +17,23 @@ These instructions will help you get a copy of the project up and running on you
 This project uses Gradle for running tests. Here are some useful commands:
 
 - Run all tests:
-  
-./gradlew test
+`./gradlew test`
+
 - Filter tests using the `--tests` option followed by TestPackage, TestClass, or TestMethod. For example:
 
   - Run tests from a specific TestPackage: 
-./gradlew clean test --tests LoanCalculatorBoundaryTest
+`./gradlew clean test --tests LoanCalculatorBoundaryTest`
+- Run a specific TestMethod:
+  `./gradlew test --tests com.banking.BankingTestCreateUser.testCreateUser`
 
-./gradlew clean test --tests LoanCalculatorBoundaryTest
+  
+### Test Reports
+
+By default, the test report is generated in `build/reports/index.html`. However, the project also supports generating more detailed and robust Allure reports. After running tests, you can generate an Allure report using one of the following commands:
+
+- For a temporary live server (server will stop after closing terminal)
+`./gradlew allureServe`
+
+- For a static html report (report will be saved in `build/reports/allure-report/`)
+`./gradlew allureReport`
+You can then view the Allure report by opening `build/reports/allure-report/index.html` in your web browser or within IntelliJ IDEA.
