@@ -9,7 +9,7 @@ These instructions will help you get a copy of the project up and running on you
 ### Prerequisites
 
 - Java Development Kit (JDK) - Project SDK version 17 is used in this project.
-- ChromeDriver installed on your machine.
+- ChromeDriver installed on your machine. If you running tests on Mac OS use Chrome driver version 114. On 115 version for Mac arm presented bug
 - All other project dependencies are handled through Gradle and are listed in the project's Gradle file.
 
 ### Running Tests
@@ -19,12 +19,12 @@ This project uses Gradle for running tests. Here are some useful commands:
 - Run all tests:
 `./gradlew test`
 
-- Filter tests using the `--tests` option followed by TestPackage, TestClass, or TestMethod. For example:
+- Filter tests using the `--tests` option followed by TestPackage, TestClass, or TestMethod.
 
-  - Run tests from a specific TestPackage: 
-`./gradlew clean test --tests LoanCalculatorBoundaryTest`
-- Run a specific TestMethod:
-  `./gradlew test --tests com.banking.BankingTestCreateUser.testCreateUser`
+  - Run tests from a specific TestPackage: `./gradlew clean test --tests "com.bigbank.loan.calc.*"`
+  - Run a specific TestClass: `./gradlew clean test --tests LoanCalculatorBoundaryTest `
+  - Run a specific TestMethod: `./gradlew test --tests com.banking.BankingTestCreateUser.testCreateUser`
+
 
   
 ### Test Reports
