@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - LoanCalculatorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>LoanCalculatorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.bigbank.loan.calc.html">com.bigbank.loan.calc</a> &gt; LoanCalculatorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">12.687s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldRecalculateMonthlyPaymentIfAmountOrPeriodChanged()</td>
+<td class="success">4.382s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldRetainPreviousValuesOnClosureWithoutSave()</td>
+<td class="success">4.604s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldRetainSavedValuesOnClosureWithSave()</td>
+<td class="success">3.701s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO com.codeborne.selenide.logevents.SimpleReport - Report for [engine:junit-jupiter]/[class:com.bigbank.loan.calc.LoanCalculatorTest]/[method:shouldRecalculateMonthlyPaymentIfAmountOrPeriodChanged()]
++-----------------------------------+----------------------------------+------------+------------+
+| Element                           | Subject                          | Status     | ms.        |
++-----------------------------------+----------------------------------+------------+------------+
+| open                              | https://laenutaotlus.bigbank.ee/ | PASS       | 233        |
+| By.name: header-calculator-amount | double click()                   | PASS       | 391        |
+| By.name: header-calculator-amount | send keys()                     | PASS       | 21         |
+| By.name: header-calculator-amount | set value(16500)                 | PASS       | 64         |
+| By.name: header-calculator-period | double click()                   | PASS       | 173        |
+| By.name: header-calculator-period | send keys()                     | PASS       | 23         |
+| By.name: header-calculator-period | set value(24)                    | PASS       | 62         |
+| .bb-labeled-value__value          | click()                          | PASS       | 553        |
+| .bb-labeled-value__value          | should have(text &quot;€&quot;)            | PASS       | 24         |
+| .bb-labeled-value__value          | get text()                       | PASS       | 16         |
+| By.name: header-calculator-amount | double click()                   | PASS       | 140        |
+| By.name: header-calculator-amount | send keys()                     | PASS       | 21         |
+| By.name: header-calculator-amount | set value(9800)                  | PASS       | 60         |
+| By.name: header-calculator-period | double click()                   | PASS       | 166        |
+| By.name: header-calculator-period | send keys()                     | PASS       | 22         |
+| By.name: header-calculator-period | set value(18)                    | PASS       | 62         |
+| .bb-labeled-value__value          | click()                          | PASS       | 288        |
+| .bb-labeled-value__value          | should have(text &quot;€&quot;)            | PASS       | 23         |
+| .bb-labeled-value__value          | get text()                       | PASS       | 14         |
++-----------------------------------+----------------------------------+------------+------------+
+
+[Test worker] INFO com.codeborne.selenide.logevents.SimpleReport - Report for [engine:junit-jupiter]/[class:com.bigbank.loan.calc.LoanCalculatorTest]/[method:shouldRetainPreviousValuesOnClosureWithoutSave()]
++-----------------------------------+----------------------------------+------------+------------+
+| Element                           | Subject                          | Status     | ms.        |
++-----------------------------------+----------------------------------+------------+------------+
+| open                              | https://laenutaotlus.bigbank.ee/ | PASS       | 223        |
+| By.name: header-calculator-amount | get value()                      | PASS       | 237        |
+| By.name: header-calculator-period | get value()                      | PASS       | 14         |
+| .bb-labeled-value__value          | should have(text &quot;€&quot;)            | PASS       | 610        |
+| .bb-labeled-value__value          | get text()                       | PASS       | 13         |
+| By.name: header-calculator-amount | double click()                   | PASS       | 136        |
+| By.name: header-calculator-amount | send keys()                     | PASS       | 22         |
+| By.name: header-calculator-amount | set value(16500)                 | PASS       | 63         |
+| By.name: header-calculator-period | double click()                   | PASS       | 177        |
+| By.name: header-calculator-period | send keys()                     | PASS       | 22         |
+| By.name: header-calculator-period | set value(24)                    | PASS       | 59         |
+| .bb-labeled-value__value          | click()                          | PASS       | 562        |
+| .bb-button__icon                  | click()                          | PASS       | 64         |
+| .bb-edit-amount__amount           | click()                          | PASS       | 280        |
+| By.name: header-calculator-amount | get value()                      | PASS       | 56         |
+| By.name: header-calculator-period | get value()                      | PASS       | 13         |
+| .bb-labeled-value__value          | should have(text &quot;€&quot;)            | PASS       | 13         |
+| .bb-labeled-value__value          | get text()                       | PASS       | 12         |
++-----------------------------------+----------------------------------+------------+------------+
+
+[Test worker] INFO com.codeborne.selenide.logevents.SimpleReport - Report for [engine:junit-jupiter]/[class:com.bigbank.loan.calc.LoanCalculatorTest]/[method:shouldRetainSavedValuesOnClosureWithSave()]
++---------------------------------------------------------+----------------------------------+------------+------------+
+| Element                                                 | Subject                          | Status     | ms.        |
++---------------------------------------------------------+----------------------------------+------------+------------+
+| open                                                    | https://laenutaotlus.bigbank.ee/ | PASS       | 248        |
+| By.name: header-calculator-amount                       | double click()                   | PASS       | 367        |
+| By.name: header-calculator-amount                       | send keys()                     | PASS       | 21         |
+| By.name: header-calculator-amount                       | set value(16500)                 | PASS       | 61         |
+| By.name: header-calculator-period                       | double click()                   | PASS       | 167        |
+| By.name: header-calculator-period                       | send keys()                     | PASS       | 21         |
+| By.name: header-calculator-period                       | set value(24)                    | PASS       | 65         |
+| .bb-labeled-value__value                                | click()                          | PASS       | 312        |
+| .bb-labeled-value__value                                | should have(text &quot;€&quot;)            | PASS       | 37         |
+| .bb-labeled-value__value                                | get text()                       | PASS       | 13         |
+| .bb-calculator-modal__submit-button &gt; .bb-button__label | click()                          | PASS       | 45         |
+| .bb-edit-amount__amount                                 | click()                          | PASS       | 270        |
+| By.name: header-calculator-amount                       | get value()                      | PASS       | 16         |
+| By.name: header-calculator-period                       | get value()                      | PASS       | 12         |
+| .bb-labeled-value__value                                | should have(text &quot;€&quot;)            | PASS       | 12         |
+| .bb-labeled-value__value                                | get text()                       | PASS       | 14         |
++---------------------------------------------------------+----------------------------------+------------+------------+
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 2 Aug 2023, 22:59:40</p>
+</div>
+</div>
+</body>
+</html>

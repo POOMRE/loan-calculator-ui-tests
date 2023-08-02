@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bigbank.loan.calc.LoanCalculatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-08-02T19:59:27" hostname="DESKTOP-Q4QNSOT" time="12.701">
+  <properties/>
+  <testcase name="shouldRecalculateMonthlyPaymentIfAmountOrPeriodChanged()" classname="com.bigbank.loan.calc.LoanCalculatorTest" time="4.382"/>
+  <testcase name="shouldRetainPreviousValuesOnClosureWithoutSave()" classname="com.bigbank.loan.calc.LoanCalculatorTest" time="4.604"/>
+  <testcase name="shouldRetainSavedValuesOnClosureWithSave()" classname="com.bigbank.loan.calc.LoanCalculatorTest" time="3.701"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.logevents.SimpleReport - Report for [engine:junit-jupiter]/[class:com.bigbank.loan.calc.LoanCalculatorTest]/[method:shouldRecalculateMonthlyPaymentIfAmountOrPeriodChanged()]
++-----------------------------------+----------------------------------+------------+------------+
+| Element                           | Subject                          | Status     | ms.        |
++-----------------------------------+----------------------------------+------------+------------+
+| open                              | https://laenutaotlus.bigbank.ee/ | PASS       | 233        |
+| By.name: header-calculator-amount | double click()                   | PASS       | 391        |
+| By.name: header-calculator-amount | send keys()                     | PASS       | 21         |
+| By.name: header-calculator-amount | set value(16500)                 | PASS       | 64         |
+| By.name: header-calculator-period | double click()                   | PASS       | 173        |
+| By.name: header-calculator-period | send keys()                     | PASS       | 23         |
+| By.name: header-calculator-period | set value(24)                    | PASS       | 62         |
+| .bb-labeled-value__value          | click()                          | PASS       | 553        |
+| .bb-labeled-value__value          | should have(text "€")            | PASS       | 24         |
+| .bb-labeled-value__value          | get text()                       | PASS       | 16         |
+| By.name: header-calculator-amount | double click()                   | PASS       | 140        |
+| By.name: header-calculator-amount | send keys()                     | PASS       | 21         |
+| By.name: header-calculator-amount | set value(9800)                  | PASS       | 60         |
+| By.name: header-calculator-period | double click()                   | PASS       | 166        |
+| By.name: header-calculator-period | send keys()                     | PASS       | 22         |
+| By.name: header-calculator-period | set value(18)                    | PASS       | 62         |
+| .bb-labeled-value__value          | click()                          | PASS       | 288        |
+| .bb-labeled-value__value          | should have(text "€")            | PASS       | 23         |
+| .bb-labeled-value__value          | get text()                       | PASS       | 14         |
++-----------------------------------+----------------------------------+------------+------------+
+
+[Test worker] INFO com.codeborne.selenide.logevents.SimpleReport - Report for [engine:junit-jupiter]/[class:com.bigbank.loan.calc.LoanCalculatorTest]/[method:shouldRetainPreviousValuesOnClosureWithoutSave()]
++-----------------------------------+----------------------------------+------------+------------+
+| Element                           | Subject                          | Status     | ms.        |
++-----------------------------------+----------------------------------+------------+------------+
+| open                              | https://laenutaotlus.bigbank.ee/ | PASS       | 223        |
+| By.name: header-calculator-amount | get value()                      | PASS       | 237        |
+| By.name: header-calculator-period | get value()                      | PASS       | 14         |
+| .bb-labeled-value__value          | should have(text "€")            | PASS       | 610        |
+| .bb-labeled-value__value          | get text()                       | PASS       | 13         |
+| By.name: header-calculator-amount | double click()                   | PASS       | 136        |
+| By.name: header-calculator-amount | send keys()                     | PASS       | 22         |
+| By.name: header-calculator-amount | set value(16500)                 | PASS       | 63         |
+| By.name: header-calculator-period | double click()                   | PASS       | 177        |
+| By.name: header-calculator-period | send keys()                     | PASS       | 22         |
+| By.name: header-calculator-period | set value(24)                    | PASS       | 59         |
+| .bb-labeled-value__value          | click()                          | PASS       | 562        |
+| .bb-button__icon                  | click()                          | PASS       | 64         |
+| .bb-edit-amount__amount           | click()                          | PASS       | 280        |
+| By.name: header-calculator-amount | get value()                      | PASS       | 56         |
+| By.name: header-calculator-period | get value()                      | PASS       | 13         |
+| .bb-labeled-value__value          | should have(text "€")            | PASS       | 13         |
+| .bb-labeled-value__value          | get text()                       | PASS       | 12         |
++-----------------------------------+----------------------------------+------------+------------+
+
+[Test worker] INFO com.codeborne.selenide.logevents.SimpleReport - Report for [engine:junit-jupiter]/[class:com.bigbank.loan.calc.LoanCalculatorTest]/[method:shouldRetainSavedValuesOnClosureWithSave()]
++---------------------------------------------------------+----------------------------------+------------+------------+
+| Element                                                 | Subject                          | Status     | ms.        |
++---------------------------------------------------------+----------------------------------+------------+------------+
+| open                                                    | https://laenutaotlus.bigbank.ee/ | PASS       | 248        |
+| By.name: header-calculator-amount                       | double click()                   | PASS       | 367        |
+| By.name: header-calculator-amount                       | send keys()                     | PASS       | 21         |
+| By.name: header-calculator-amount                       | set value(16500)                 | PASS       | 61         |
+| By.name: header-calculator-period                       | double click()                   | PASS       | 167        |
+| By.name: header-calculator-period                       | send keys()                     | PASS       | 21         |
+| By.name: header-calculator-period                       | set value(24)                    | PASS       | 65         |
+| .bb-labeled-value__value                                | click()                          | PASS       | 312        |
+| .bb-labeled-value__value                                | should have(text "€")            | PASS       | 37         |
+| .bb-labeled-value__value                                | get text()                       | PASS       | 13         |
+| .bb-calculator-modal__submit-button > .bb-button__label | click()                          | PASS       | 45         |
+| .bb-edit-amount__amount                                 | click()                          | PASS       | 270        |
+| By.name: header-calculator-amount                       | get value()                      | PASS       | 16         |
+| By.name: header-calculator-period                       | get value()                      | PASS       | 12         |
+| .bb-labeled-value__value                                | should have(text "€")            | PASS       | 12         |
+| .bb-labeled-value__value                                | get text()                       | PASS       | 14         |
++---------------------------------------------------------+----------------------------------+------------+------------+
+
+]]></system-err>
+</testsuite>
