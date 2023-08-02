@@ -12,11 +12,12 @@ import static com.codeborne.selenide.Selenide.*;
 public class LoanCalculatorPage {
 
     private SelenideElement loanAmountInput = $(By.name("header-calculator-amount"));
-    private SelenideElement loanPeriodInput =   $(By.name("header-calculator-period"));
-    private SelenideElement proceedButton =    $(By.cssSelector(".bb-calculator-modal__submit-button > .bb-button__label"));
+    private SelenideElement loanPeriodInput = $(By.name("header-calculator-period"));
+    private SelenideElement proceedButton = $(By.cssSelector(".bb-calculator-modal__submit-button > .bb-button__label"));
     private SelenideElement monthlyPaymentValue = $(By.cssSelector(".bb-labeled-value__value"));
     private SelenideElement closeCalculator = $(By.cssSelector(".bb-button__icon"));
     private String calculatorUrl = "https://laenutaotlus.bigbank.ee/";
+
     public LoanCalculatorPage open() {
         Selenide.open(calculatorUrl);
         return this;
@@ -33,11 +34,11 @@ public class LoanCalculatorPage {
         return monthlyPaymentValue.shouldHave(Condition.text("€")).getText();
     }
 
-    public void closeAndSave(){
+    public void closeAndSave() {
         clickProceed();
     }
 
-    public void closeWithoutSave(){
+    public void closeWithoutSave() {
         closeCalculator.click();
     }
 
@@ -64,8 +65,4 @@ public class LoanCalculatorPage {
         proceedButton.click();
 
     }
-    public void waitForLoad(){
-        monthlyPaymentValue.shouldHave(Condition.text("€"),Condition.appear);
-    }
-
 }

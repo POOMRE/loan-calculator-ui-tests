@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import page_objects.ClientDetailsAndConfirmationPage;
 import page_objects.LoanCalculatorPage;
 
-import static com.codeborne.selenide.Selenide.sleep;
 
 /**
  * LoanCalculatorTest is a test class to test the functionality of the loan calculator page.
@@ -69,7 +68,6 @@ public class LoanCalculatorTest extends BaseTestCase {
     public void shouldRetainSavedValuesOnClosureWithSave() {
         // Set new loan amount, new period, save, and close the calculator
         loanCalculatorPage.setLoanAmountAndPeriod(getData("LoanAmount"), getData("LoanPeriod"));
-        sleep(6000);
         float monthlyPaymentBeforeClose = transformStringToNumber(loanCalculatorPage.getMonthlyPayment());
         loanCalculatorPage.closeAndSave();
 

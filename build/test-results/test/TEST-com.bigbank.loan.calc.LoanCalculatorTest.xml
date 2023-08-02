@@ -1,46 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bigbank.loan.calc.LoanCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-02T21:42:12" hostname="DESKTOP-Q4QNSOT" time="13.676">
+<testsuite name="com.bigbank.loan.calc.LoanCalculatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-08-02T23:20:18" hostname="DESKTOP-Q4QNSOT" time="20.76">
   <properties/>
-  <testcase name="shouldRetainSavedValuesOnClosureWithSave()" classname="com.bigbank.loan.calc.LoanCalculatorTest" time="13.676"/>
+  <testcase name="shouldRecalculateMonthlyPaymentIfAmountOrPeriodChanged()" classname="com.bigbank.loan.calc.LoanCalculatorTest" time="6.335"/>
+  <testcase name="shouldRetainPreviousValuesOnClosureWithoutSave()" classname="com.bigbank.loan.calc.LoanCalculatorTest" time="4.518"/>
+  <testcase name="shouldRetainSavedValuesOnClosureWithSave()" classname="com.bigbank.loan.calc.LoanCalculatorTest" time="9.903"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Igor\IdeaProjects\LoanCalculator\build\downloads\1691012532057_27792_1
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 115.0.5790.102 (resolved driver for Chrome 115)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Igor\.cache\selenium\chromedriver\win64\115.0.5790.102\chromedriver.exe
-Aug 03, 2023 12:42:12 AM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Webdriver has been closed meanwhile. Let's re-create it.
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Deleted empty folder: C:\Users\Igor\IdeaProjects\LoanCalculator\build\downloads\1691018410824_12668_1
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 1 -> ChromeDriver: chrome on windows (d38e6eba7a3dca3bf998aeabb61bd5d8)...
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 1 in 105 ms
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Unregister WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on windows (null),proxy=null,downloadsFolder=C:\Users\Igor\IdeaProjects\LoanCalculator\build\downloads\1691018410824_12668_1] in 1 [size=0]
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Igor\IdeaProjects\LoanCalculator\build\downloads\1691018418643_12668_1
+Aug 03, 2023 2:20:18 AM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
 INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
-Aug 03, 2023 12:42:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Aug 03, 2023 2:20:19 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 114
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=115.0.5790.110 Platform=windows
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.16.0
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.10.0 build revision: c14d967899
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (d5b6a94a632e3f1d95902efb4f0e01a1)
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on windows (d5b6a94a632e3f1d95902efb4f0e01a1),proxy=null,downloadsFolder=C:\Users\Igor\IdeaProjects\LoanCalculator\build\downloads\1691012532057_27792_1] in 1 [size=1]
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (dc61f980dbd14703b5357bf8c8df3ecb)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on windows (dc61f980dbd14703b5357bf8c8df3ecb),proxy=null,downloadsFolder=C:\Users\Igor\IdeaProjects\LoanCalculator\build\downloads\1691018418643_12668_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.logevents.SimpleReport - Report for [engine:junit-jupiter]/[class:com.bigbank.loan.calc.LoanCalculatorTest]/[method:shouldRecalculateMonthlyPaymentIfAmountOrPeriodChanged()]
++-----------------------------------+----------------------------------+------------+------------+
+| Element                           | Subject                          | Status     | ms.        |
++-----------------------------------+----------------------------------+------------+------------+
+| open                              | https://laenutaotlus.bigbank.ee/ | PASS       | 1989       |
+|   webdriver                       | create()                         | PASS       | 911        |
+| By.name: header-calculator-amount | double click()                   | PASS       | 420        |
+| By.name: header-calculator-amount | send keys()                     | PASS       | 98         |
+| By.name: header-calculator-amount | set value(16500)                 | PASS       | 141        |
+| By.name: header-calculator-period | double click()                   | PASS       | 164        |
+| By.name: header-calculator-period | send keys()                     | PASS       | 22         |
+| By.name: header-calculator-period | set value(24)                    | PASS       | 69         |
+| .bb-labeled-value__value          | click()                          | PASS       | 538        |
+| .bb-labeled-value__value          | should have(text "€")            | PASS       | 22         |
+| .bb-labeled-value__value          | get text()                       | PASS       | 15         |
+| By.name: header-calculator-amount | double click()                   | PASS       | 143        |
+| By.name: header-calculator-amount | send keys()                     | PASS       | 32         |
+| By.name: header-calculator-amount | set value(9800)                  | PASS       | 62         |
+| By.name: header-calculator-period | double click()                   | PASS       | 152        |
+| By.name: header-calculator-period | send keys()                     | PASS       | 27         |
+| By.name: header-calculator-period | set value(18)                    | PASS       | 87         |
+| .bb-labeled-value__value          | click()                          | PASS       | 290        |
+| .bb-labeled-value__value          | should have(text "€")            | PASS       | 21         |
+| .bb-labeled-value__value          | get text()                       | PASS       | 14         |
++-----------------------------------+----------------------------------+------------+------------+
+
+[Test worker] INFO com.codeborne.selenide.logevents.SimpleReport - Report for [engine:junit-jupiter]/[class:com.bigbank.loan.calc.LoanCalculatorTest]/[method:shouldRetainPreviousValuesOnClosureWithoutSave()]
++-----------------------------------+----------------------------------+------------+------------+
+| Element                           | Subject                          | Status     | ms.        |
++-----------------------------------+----------------------------------+------------+------------+
+| open                              | https://laenutaotlus.bigbank.ee/ | PASS       | 301        |
+| By.name: header-calculator-amount | get value()                      | PASS       | 225        |
+| By.name: header-calculator-period | get value()                      | PASS       | 12         |
+| .bb-labeled-value__value          | should have(text "€")            | PASS       | 530        |
+| .bb-labeled-value__value          | get text()                       | PASS       | 14         |
+| By.name: header-calculator-amount | double click()                   | PASS       | 151        |
+| By.name: header-calculator-amount | send keys()                     | PASS       | 22         |
+| By.name: header-calculator-amount | set value(16500)                 | PASS       | 66         |
+| By.name: header-calculator-period | double click()                   | PASS       | 151        |
+| By.name: header-calculator-period | send keys()                     | PASS       | 24         |
+| By.name: header-calculator-period | set value(24)                    | PASS       | 62         |
+| .bb-labeled-value__value          | click()                          | PASS       | 543        |
+| .bb-button__icon                  | click()                          | PASS       | 55         |
+| .bb-edit-amount__amount           | click()                          | PASS       | 265        |
+| By.name: header-calculator-amount | get value()                      | PASS       | 26         |
+| By.name: header-calculator-period | get value()                      | PASS       | 12         |
+| .bb-labeled-value__value          | should have(text "€")            | PASS       | 14         |
+| .bb-labeled-value__value          | get text()                       | PASS       | 12         |
++-----------------------------------+----------------------------------+------------+------------+
+
 [Test worker] INFO com.codeborne.selenide.logevents.SimpleReport - Report for [engine:junit-jupiter]/[class:com.bigbank.loan.calc.LoanCalculatorTest]/[method:shouldRetainSavedValuesOnClosureWithSave()]
 +---------------------------------------------------------+----------------------------------+------------+------------+
 | Element                                                 | Subject                          | Status     | ms.        |
 +---------------------------------------------------------+----------------------------------+------------+------------+
-| open                                                    | https://laenutaotlus.bigbank.ee/ | PASS       | 3450       |
-|   webdriver                                             | create()                         | PASS       | 2368       |
-| By.name: header-calculator-amount                       | double click()                   | PASS       | 245        |
-| By.name: header-calculator-amount                       | send keys()                     | PASS       | 36         |
-| By.name: header-calculator-amount                       | set value(16500)                 | PASS       | 92         |
-| By.name: header-calculator-period                       | double click()                   | PASS       | 180        |
-| By.name: header-calculator-period                       | send keys()                     | PASS       | 23         |
-| By.name: header-calculator-period                       | set value(24)                    | PASS       | 76         |
-| .bb-labeled-value__value                                | click()                          | PASS       | 925        |
-| .bb-labeled-value__value                                | should have(text "€")            | PASS       | 22         |
-| .bb-labeled-value__value                                | get text()                       | PASS       | 19         |
-| .bb-calculator-modal__submit-button > .bb-button__label | click()                          | PASS       | 53         |
-| .bb-edit-amount__amount                                 | click()                          | PASS       | 292        |
-| By.name: header-calculator-amount                       | get value()                      | PASS       | 45         |
-| By.name: header-calculator-period                       | get value()                      | PASS       | 20         |
-| .bb-labeled-value__value                                | should have(text "€")            | PASS       | 20         |
-| .bb-labeled-value__value                                | get text()                       | PASS       | 15         |
+| open                                                    | https://laenutaotlus.bigbank.ee/ | PASS       | 214        |
+| By.name: header-calculator-amount                       | double click()                   | PASS       | 383        |
+| By.name: header-calculator-amount                       | send keys()                     | PASS       | 25         |
+| By.name: header-calculator-amount                       | set value(16500)                 | PASS       | 59         |
+| By.name: header-calculator-period                       | double click()                   | PASS       | 169        |
+| By.name: header-calculator-period                       | send keys()                     | PASS       | 25         |
+| By.name: header-calculator-period                       | set value(24)                    | PASS       | 60         |
+| .bb-labeled-value__value                                | click()                          | PASS       | 536        |
+| .bb-labeled-value__value                                | should have(text "€")            | PASS       | 16         |
+| .bb-labeled-value__value                                | get text()                       | PASS       | 14         |
+| .bb-calculator-modal__submit-button > .bb-button__label | click()                          | PASS       | 52         |
+| .bb-edit-amount__amount                                 | click()                          | PASS       | 253        |
+| By.name: header-calculator-amount                       | get value()                      | PASS       | 13         |
+| By.name: header-calculator-period                       | get value()                      | PASS       | 12         |
+| .bb-labeled-value__value                                | should have(text "€")            | PASS       | 15         |
+| .bb-labeled-value__value                                | get text()                       | PASS       | 13         |
 +---------------------------------------------------------+----------------------------------+------------+------------+
 
 ]]></system-err>

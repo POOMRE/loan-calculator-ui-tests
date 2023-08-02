@@ -3,7 +3,6 @@ package com.bigbank.loan.calc;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import page_objects.ClientDetailsAndConfirmationPage;
 import page_objects.LoanCalculatorPage;
 
 /**
@@ -12,7 +11,6 @@ import page_objects.LoanCalculatorPage;
 public class LoanCalculatorBoundaryTest extends BaseTestCase {
 
     private final LoanCalculatorPage loanCalculatorPage = new LoanCalculatorPage();
-    private final ClientDetailsAndConfirmationPage clientDetailsAndConfirmationPage = new ClientDetailsAndConfirmationPage();
 
     /**
      * Open the loan calculator page before each test.
