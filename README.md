@@ -9,7 +9,7 @@ These instructions will help you get a copy of the project up and running on you
 
 ### Prerequisites
 - Java Development Kit (JDK) - Project SDK version 17 is used in this project.
-- ChromeDriver - use version 114 if running tests on Mac OS due to a bug in the 115 version for mac_arm64.
+- ChromeDriver - use version 114 or lower if running tests on Mac OS due to a bug in the 115 version for mac_arm64.
 - Allure - for generating detailed test reports.
 - Gradle - handles the project's other dependencies, specified in the project's Gradle file.
 
