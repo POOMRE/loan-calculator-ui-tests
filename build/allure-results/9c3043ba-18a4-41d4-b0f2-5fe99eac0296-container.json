@@ -1,1 +1,0 @@
-{"uuid":"9c3043ba-18a4-41d4-b0f2-5fe99eac0296","name":"LoanCalculatorBoundaryTest","children":["9e3e7f67-5854-48f7-a5d3-93e74eb87e40"],"befores":[{"name":"setupAllure","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1691019278359,"stop":1691019278369}],"afters":[],"start":1691019278321,"stop":1691019284279}
